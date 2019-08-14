@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>เรียนเขียนโปรแกรมจากศูนย์ - อักษรฯ จุฬาฯ</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Basic Programming - Chulalongkorn University</a>
+      </div>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+      <!-- Title -->
+      <div class="jumbotron">
+            <h1>การเขียนโปรแกรมเพื่อการประมวลผลภาษาธรรมชาติ</h1>
+            <p class="lead">2209671 & 2209261 Programming for Natural Language Processing (Semester 1 2018)</p>
+            <ul class="list-unstyled">
+              <li>ภาควิชาภาษาศาสตร์ คณะอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</li>
+              <li>Linguistics Department - Faculty of Arts Chulalongkorn University</li>
+            </ul>
+      </div>
+      <!-- Course information -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>เรียนแล้วจะทำอะไรได้บ้าง</h1>
+          <p>จุดมุ่งหมายโดยรวมคือเรียนเขียนคำสั่งให้คอมพิวเตอร์ทำโน่นทำนี่ให้กับเรา โดยจะเรียนไปถึงระดับที่ทำให้สามารถเขียนโปรแกรมด้วยภาษา Python ที่ช่วยทำประมวลข้อมูลทางภาษาในรูปแบบต่างๆ ที่สำคัญๆ เรียนเสร็จควรจะทำพวกนี้ได้</p>
+          <ul>
+            <li>นับจำนวนคำและความถี่ของคำ </li>
+            <li>หา concordance และ collocation ของคำในคลังข้อมูล </li>
+            <li>แปลงรูปแบบของข้อมูลจาก text เป็น json ให้เหมาะสมกับการใช้</li>
+            <li>เขียนโปรแกรมดาวน์โหลดหรือขูดข้อมูลจากแหล่งต่างๆ เช่น บัญชี facebook ของตัวเอง wikipedia ทวิตเตอร์ หรือเว็บไซต์แหล่งข่าว และแปลงเป็นรูปแบบที่ง่ายต่อการวิเคราะห์ทางภาษาศาสตร์</li>
+            <li>ใช้ชุดเครื่องมือ (toolkit) ในการวิเคราะห์คำและประโยคโดยอัตโนมัติ</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h1 class="mb-4">ข้อมูลรายวิชา (ภาคต้น ปีการศึกษา 2561)</h1>
+          <p><b>ผู้สอน:</b> Attapol Thamrongrattanarit - อาจารย์ ดร.อรรถพล ธำรงรัตนฤทธิ์ </p>
+          <p><b>Email address:</b> attapol.t@chula.ac.th</p>
+          <p><b>เวลาและสถานที่:</b> วันอังคาร 9:30AM - 12:30PM อาคารบรมราชกุมารี ห้อง 411 </p>
+          <p><b>Course website:</b> attapol.github.io/programming</p>
+          <p><b>Website สำหรับส่งงาน:</b> </p>
+          <ol>
+            <li>สมัคร Google app account ใช้ Chula id (<a href="http://www.it.chula.ac.th/googleapps" target="_blank">Instructions</a>)</li>
+            <li>ไปที่ classroom.google.com ใช้ Chula google account</li>
+            <li>คลิกเครื่องหมาย + เพื่อเข้าร่วมคลาส code <code>9iaiyj</code> </li>
+          </ol>
+
+        </div>
+      </div>
+
+      <!-- Course materials -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Course Material</h1>
+          <p><b>Video lectures and quizzes:</b> <a href="https://www.coursera.org/learn/learn-to-program/">Learn to Program: The Fundamentals</a> by Campbell and Gries on Coursera</p>
+          <p><b>Video lectures in Thai:</b> <a href="https://www.youtube.com/channel/UCgNWcPsv0yC94HHVXLjyJ5Q?view_as=subscriber">ภาษาศาสตร์คอมพิวเตอร์ Youtube channel</a> ของอาจารย์อรรถพล | <a href="https://www.youtube.com/playlist?list=PLyyEwPZh6aHonswACFytZDCeDxUNvreX-">playlist</a> ของวิชานี้</p>
+          <p><b>Textbook:</b> Python ๑๐๑ โดยกิตติภณ พละการ, กิตติภพ พละการ, สมชาย ประสิทธิ์จูตระกูล และ สุกรี สินธุภิญโญ ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย | <a href="https://www.cp.eng.chula.ac.th/books/python101/">ดาวน์โหลดฟรี</a> </p>
+          <p>The "lecture" material for the first half of the course will be based on coursera.org online course: <em>Learn to Program: The Fundamentals</em> by Jennifer Campbell and Paul Gries from University of Toronto. Students must watch the lectures and complete the quiz on Coursera or my videos on Youtube and come to class to work on more exercises and get help from your classmates and me for the topics that you don't understand from the video.</p>            
+          <h1>Course Schedule</h1>
+          <p>LP = Learn to Program course on Coursera</p>
+          <p>PA = Programming assignment</p>
+          <p>The schedule will be adjusted based on students' needs</p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>สัปดาห์</th>
+                <th>หัวข้อ</th>
+                <th>ต้องทำอะไรบ้าง</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Variables and Functions
+                  <ul>
+                    <li><a href="https://youtu.be/9FuaVv-Pyt4">เขียนโปรแกรมภาษาไพธอนบน console</a></li>
+                    <li><a href="https://youtu.be/GQsaZi6P76I">Variables ตัวแปร</a></li>
+                    <li><a href="https://youtu.be/o_9mFOL_mpQ">Functions และ built-in functions</a></li>
+                    <li><a href="https://youtu.be/MOJ4NHAQjd8">การเขียน function</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: - </p>
+                  <p>In-class: <a href="slides/week1 intro.pdf">intro slides</a>, <a href="https://www.anaconda.com/download/">install Anaconda</a>, join Google classroom site, sign up on coursera, <a href="inclass_exercises/In-class exercise 1.ipynb">ipynb exercise 1</a> (<a href="https://github.com/attapol/programming/blob/master/inclass_exercises/In-class exercise 1.ipynb">html version</a>)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Strings and Designing Functions
+                  <ul>
+                    <li><a href="https://youtu.be/byxjKMJ_syk">String</a></li>
+                    <li><a href="https://youtu.be/KLcwx1N6ZW4">String operands</a></li>
+                    <li><a href="https://youtu.be/ZvZbX_Awq3c">Interact กับผู้ใช้ด้วย print และ input</a></li>
+                    <li><a href="https://youtu.be/dFaGO8T_mzA">Docstring</a></li>
+                    <li><a href="https://youtu.be/tu37ChG-E48">Computer memory organization</a></li>
+                    <li><a href="https://youtu.be/ZN0noiAgOas">Function tracing and stack frames</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch LP week 2 videos, complete week2 quiz on coursera</p>
+                  <p>In-class: review the quiz, exercise 2 (<a href="inclass_exercises/exercise2.ipynb">ipynb</a>, <a href="https://github.com/attapol/programming/blob/master/inclass_exercises/exercise2.ipynb">html</a>)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Booleans, <code>import</code>, Namespaces, <code>if</code> statements, for loop on string, string manipulation
+                  <ul>
+                    <li><a href="https://youtu.be/SUiIyeAnF2c">Boolean and if-statement</a></li>
+                    <li><a href="https://youtu.be/fDidoHJNbh4">Type conversion</a></li>
+                    <li><a href="https://youtu.be/TtQ8LVdgsTw">Importing modules</a></li>
+                    <li><a href="https://youtu.be/atA78y0jUdw">String splicing</a></li>
+                    <li><a href="https://youtu.be/_n3yrbbeu5E">Methods and string manipulation</a></li>
+                    <li><a href="https://youtu.be/R_V3qPfm5pY">ตัวอย่าง 1 ทบทวนและใช้เครื่องมือที่เรียนมา</a></li>
+                    <li><a href="https://youtu.be/xKLBaNEv_WA">ตัวอย่าง 2 ทบทวนและใช้เครื่องมือที่เรียนมา</a></li>
+                    <li><a href="https://youtu.be/Z-mElNsk6to">ตัวอย่าง 3 ใช้ for loop เพื่อ iterate string</a></li>
+                    <li><a href="https://youtu.be/MPnnHWi6FZA">ตัวอย่าง 4 ใช้ for loop เพื่อ iterate string</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch LP week 3, complete the quiz 3</p>
+                  <p>In-class: review the quiz, exercise 3 (<a href="inclass_exercises/exercise3.ipynb">ipynb</a>|<a href="https://github.com/attapol/programming/blob/master/inclass_exercises/exercise3.ipynb">html</a>), start PA1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><code>while</code> loops, list, <code>range</code>, loop over indices
+                  <ul>
+                    <li><a href="https://youtu.be/okwtmuwOcso">Data structure: List</a></li>
+                    <li><a href="https://youtu.be/498T92HrHPc">List methods</a></li>
+                    <li><a href="https://youtu.be/9v0fP-XxtnA">Function mapping</a></li>
+                    <li><a href="https://youtu.be/BdicdSC-0MQ">For loop over indices</a></li>
+                    <li><a href="https://youtu.be/QtOE_pUL1j8">While loop</a></li>
+                    <li><a href="https://youtu.be/2T1_0eLYPAQ">ตัวอย่าง 1 iterate list ของคำ</a></li>
+                    <li><a href="https://youtu.be/3fO3yQL5D9I">ตัวอย่าง 2 split string</a></li>
+                    <li><a href="code/week4 list.py">Code จากตัวอย่าง</a></li>
+                  </ul>
+                
+                </td>
+                <td>
+                  <p>Before class: watch LP week 4, complete the quiz 4</p>
+                  <p>In-class: review the quiz, exercise 4 and programming assignment 2 (<a href="inclass_exercises/exercise4_PA2.ipynb">ipynb</a>|<a href="https://github.com/attapol/programming/blob/master/inclass_exercises/exercise4_PA2.ipynb">html</a>)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Reading and writing files, dictionary, tuples
+                  <ul>
+                    <li><a href="https://youtu.be/CxRoXBWgE2s">Data structure: Tuple</a></li>
+                    <li><a href="https://youtu.be/CX5y8ZB_fl0">Sorting a list of tuples</a></li>
+                    <li><a href="https://youtu.be/7LZgQB53lsw">เรียนรู้จากตัวอย่าง 1: อ่านจากไฟล์ นับคำนิราศเมืองแกลง</a></li>
+                    <li><a href="https://youtu.be/hWccha5z_Dg">เรียนรู้จากตัวอย่าง 2: เขียนลงไฟล์ หา concordance</a></li>
+                    <li><a href="https://youtu.be/hn3cwm0Kvps">Data structure: Dictionary</a></li>
+                    <li><a href="https://youtu.be/UjJRs7AlTLw">เรียนรู้จากตัวอย่าง 3: dictionary ใช้นับการกระจายตัวของคำ</a></li>
+                    <li><a href="code/week5 code.zip">Code และ data จากตัวอย่าง</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch LP week 7, complete the quiz, finish PA2 (NOT the coursera version)</p>
+                  <p>In-class: review the quiz, exercise 5 (<a href="inclass_exercises/exercise5.ipynb">ipynb</a>|<a href="https://github.com/attapol/programming/blob/master/inclass_exercises/exercise5.ipynb">html</a>|<a href="data/data_pos_tags.txt">data</a>)</p>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Parallel and nested lists, <code>enumerate</code>, nested dictionaries
+                  <ul>
+                    <li><a href="https://youtu.be/hhuzLVt9-Lk">Nested list</a></li>
+                    <li><a href="https://youtu.be/M3BUoBVOEFc">Nested loop</a></li>
+                    <li><a href="https://youtu.be/vW5zcQSVGhs">Parallel list</a></li>
+                    <li><a href="https://youtu.be/WZXQJXE2W60">Nested dictionaries</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch LP week 6, complete quiz 6</p>
+                  <p>In-class: exercise 6 (<a href="inclass_exercises/exercise6.ipynb">ipynb</a>|<a href="https://github.com/attapol/programming/blob/master/inclass_exercises/exercise6.ipynb">html</a>|<a href="data/data_pos_tags.txt">data</a>), start <a href="https://docs.google.com/document/d/1juw44XzzPn-Odg94aMCTF01MSqwpNWVOxypw1M73ivM/edit?usp=sharing">PA3 Text Generator</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Python NLP libraries</td>
+                <td>
+                  <p>Before class: watch LP week 5, complete quiz 5</p>
+                  <p>In-class: review, Spacy package (<a href="docs/spacy installation.pdf">วิธีลงโปรแกรม</a>), NLTK package</p> 
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Set, regular expression, list & dictionary comprehension
+                  <ul>
+                    <li><a href="https://youtu.be/9LuzO68lY3g">Set</a></li>
+                    <li><a href="https://youtu.be/la8XLivFKys">ตัวอย่างการใช้ Set</a></li>
+                    <li><a href="https://youtu.be/nqI10qMSFeI">ตัวอย่างการใช้ operations บน Set</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=FtdL60yPmKk">Regular expression part 1 (เป็นภาษาอังกฤษ)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=5xZ2S8uGjWI">Regular expression part 2 (เป็นภาษาอังกฤษ)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=XXo7PTS39hc">Regular expression part 3 (เป็นภาษาอังกฤษ)</a></li>
+                    <li><a href="https://youtu.be/bKHMih6Dap8">List comprehension</a> |
+                      <a href="code/week8demos/list_comprehension.py">code</a>
+                    </li>
+                    <li><a href="https://youtu.be/YNtI3ZyiZK4">List filtering and comprehension</a> |
+                      <a href="code/week8demos/list_filtering.py">code</a>
+                    </li>
+                    <li><a href="https://youtu.be/hnNiQ-gJ1Z0">Dictionary comprehension</a> | 
+                      <a href="code/week8demos/dict_comprehension.py">code</a>
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch videos</p>
+                  <p>In-class: review, exercise 8 (<a href="inclass_exercises/exercise8.ipynb">ipynb</a>|<a href="https://github.com/attapol/programming/blob/master/inclass_exercises/exercise8.ipynb">html</a>|<a href="data/data_pos_tags.txt">data</a>|<a href="code/use_spacy.py">วิธีใช้ spacy เบื้องต้น</a>)</p>
+                  <p> <a href="https://docs.google.com/document/d/1-9fDtqsjjIfHwn1k-xNQM_4X1q7dbVA2TerL8TMRbO4/edit?usp=sharing">PA4 Dictionary-based Machine Translation</a> | <a href="PA/PA4_starter.py">Starter code</a>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Midterm (no midterm)</td>
+                <td>
+                  <p>PA4 due October 14th at 9:00</p>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>การส่งผ่านข้อมูลให้คนอื่นผ่าน Internet ด้วย API HTML JSON
+                  <ul>
+                    <li><a href="https://youtu.be/2-fdXMyogKw">Serialization</a></li>
+                    <li><a href="https://youtu.be/5ObIqzJPttQ">JSON serialization</a></li>
+                    <li><a href="https://youtu.be/MgRe7tut86M">JSON Python demo</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=kBXQZMmiA4s">HTTP HTML (สามารถเปิด subtitle ภาษาไทยได้)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=s7wmiS2mSXY">API คืออะไร (เป็นภาษาอังกฤษ)</a></li>
+                    <li><a href="https://youtu.be/M4XuU0lpm2M">API Call demo</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch video, complete the quiz</p>
+                  <p>In-class: review the quiz, complete extra programming exercises</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>11</td>
+                <td>หยุดวันปิยมหาราช</td>
+                <td>
+                  <p><a href="https://docs.google.com/document/d/1TInxO0qq0jeLbXS2cdW-9ryRxVNO2fcOkL4dufKJAB0/edit?usp=sharing">แบบฝึกหัดขูดข้อมูลจากหน้า HTML ด้วย BeautifulSoup</a></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>12</td>
+                <td>Object-Oriented Programming
+                
+                  <ul>
+                    <li><a href="https://youtu.be/hFwiMnqd8iA">การสร้างและimport module</a></li>
+                    <li><a href="https://youtu.be/7SWzgLRYll4">Classes and Objects</a></li>
+                    <li><a href="https://youtu.be/WB3N7iB0eDs">Methods</a></li>
+                    <li><a href="https://youtu.be/Ucz9bNRKHuI">ตัวอย่างการเขียน class และ method </a></li>
+                    <li><a href="https://youtu.be/6Pf1iSaUDu4">Subclasses and Inheritance</a></li>
+                    <li><a href="https://youtu.be/jdd5DNXNl0A">ตัวอย่างการใช้ subclass</a></li>
+                    <li><a href="code/tweet.py">tweet.py</a> | <a href="code/corpus.py">corpus.py</a> | 
+                      <a href="code/text_container.py">text_container.py</a>
+                      </li>
+                  </ul>
+                
+                </td>
+                <td>
+                  <p>Before class: watch video, complete the quiz</p>
+                  <p>In-class: review the quiz, complete extra programming exercises, <a href="https://docs.google.com/document/d/1U7iu3pUN48UFL8MLd739tzecznmK4Hv3qMpjJQ98phQ/edit?usp=sharing">คิดเรื่อง final project</a> </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>13</td>
+                <td>Machine Learning
+                  <ul>
+                    <li><a href="https://youtu.be/EF7kIMASP6g">Machine Learning คืออะไร</a></li>
+                    <li><a href="https://youtu.be/KYmo7Bn4QdI">Applications ของ Natural Language Processing</a></li>
+                    <li><a href="https://youtu.be/uT2Ys1W0HY8">4 ขั้นตอนของการใช้ Machine Learning</a></li>
+                    <li><a href="https://youtu.be/HGs1yKqjxDM">Task formulation และ Feature engineering</a></li>
+                    <li><a href="https://youtu.be/uIz5SeAxurw">Model training  และ Evaluation</a></li>
+                    <li><a href="https://youtu.be/gslc4zK1RRg">วิธีการฝึกโมเดลด้วย scikit-learn</a></li>
+                    <li><a href="https://youtu.be/VqfCLWZOFPw">Feature หร็อมแหร็ม (Sparse features and sparse matrix)</a></li>
+                  </ul>
+                
+                </td>
+                <td>
+                  <p>Before class: watch video | <a href="https://drive.google.com/open?id=1mLJM9QQJAN8Gq8ktek9bDW5YpFQPP0Ba">slides</a></p>
+                  <p>In-class: quiz, <a href="https://docs.google.com/document/d/17z0T854ZiVr6waQp0acl6_76BSBscs6yRudWz3_pFcs/edit?usp=sharing">extra programming exercise</a> | <a href="data/blog-gender-dataset.csv">dataset</a>, <a href="https://docs.google.com/document/d/1hME9wnzfP64QxXR0UhXwUEF9PUrGMJcf_qX8fe52TOg/edit">PA5 Wikipedia API Wrapper</a></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>14</td>
+                <td>(Supervised) Machine Learning: Maximum Entropy Model
+                 <ul>
+                    <li><a target="_new" href="https://youtu.be/ggbIamllu3c">Data structure: numpy array and dense matrix</a></li>
+                    <li><a href="https://youtu.be/CgspAzU0nSw">Data structure: Sparse Matrix</a></li>
+                    <li><a href="https://youtu.be/YzidkwV50-c">Logistic regression หรือ Maximum Entropy Model (MaxEnt)</a></li>
+                    <li><a href="https://youtu.be/0tYzmQMp8T4">Model Evaluation: Precision, Recall, and F1</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <p>Before class: watch video, complete the quiz</p>
+                  <p>In-class: review the quiz, 
+                    git workshop (creating project repo and pushing to repo),
+                    <a href="https://drive.google.com/open?id=1zvao3R5yozeL57zRVwyyx0s5o4caR04TjR-kZ5G_2TM">แบบฝึกหัดเรียน UNIX Tools ด้วยตัวเอง</a> |
+                    <a href="https://drive.google.com/open?id=1OK-RKE9EaM8yFGc3FYumKHQZVtNpc3_H">UNIX utilities by Ken Church</a> |
+                    <a href="https://drive.google.com/open?id=1mHNSEU3NrneejXx-RWFJLEWTi8drInOT">New York Times data</a> | 
+                    <a href="https://drive.google.com/open?id=1mPYGWgZJtymCiGAosdJzRUE3p_-mm3E4">นิราศเมืองแกลง</a>
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>15</td>
+                <td>(Unsupervised) Machine Learning: Latent Dirichlet Allocation - Topic Model</td>
+                <td>
+                  <p>In-class: <a href="https://docs.google.com/document/d/1Aeg6-8UOhEXaVnlGFTfiXAp4Xm290eLTUQhuS_1gws4/edit?usp=sharing">MALLET Topic modeling workshop</a> |
+                    LDA Slides 
+                  </p>
+                  <p>After class: <a href="https://docs.google.com/document/d/18Ttxa9sMUQXpGUgyYTWBherx6fn2ZrMigUdu28jokQQ/edit#heading=h.uj3l8a5ohb5">PA6 (Sentiment Analyzer)</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>เขียนเว็บไซต์</td>
+                <td>
+                  <p>In-class: <a href="https://docs.google.com/document/d/1XT9ayXHEgcSNr6VRdGgdmpyZjMSwsOF8kelsybq_UW8/edit?usp=sharing">เขียนเว็บไซต์โดยใช้ bootstrap</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td>Final project</td>
+                <td>
+                  <p>Project repositories
+                  <ul>
+                    <li><a href="https://github.com/nozomiyamada/Final-Project">Nozomi</a>
+                    <li><a href="https://github.com/nspll/nlp_final_project.git">Naspa</a></li>
+                    <li><a href="https://github.com/Nat-Nimit/DigiLit">DigiLit</a></li>
+                    <li><a href="https://github.com/jitkapat/PoetryAnalyser">Jitkapat's Poetry Analyser</a> </li> 
+                    <li><a href="https://github.com/suppapatn/NLPProject.git">Maz</a> </li>
+                    <li><a href= "https://github.com/Thachaparn-Bunditlurdruk/NLP-Final-Project#nlp-final-project">Thachaparn</a></li>
+                  </ul>
+                  </p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table> 
+        </div>
+      </div>
+      <!-- Course information -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>เกณฑ์การให้เกรดประเมินผล</h2>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-9">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>สัดส่วนคะแนน</th>
+                <th>รายการ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>24%</td>
+                <td>ความมีส่วนร่วมในชั้นเรียน และแบบฝึกหัดในชั้นเรียน (2 x 13 weeks ลบ week ที่คะแนนน้อยที่สุด หรือ week ที่ขาดเรียนออกไป)</td>
+              </tr>
+              <tr>
+                <td>60%</td>
+                <td>Quizzes, Homework and programming assignments</td>
+              </tr>
+              <tr>
+                <td>16%</td>
+                <td>Final project</td>
+                <li></li>
+              </tr>
+                
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-lg-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>คะแนน</th>
+                <th>เกรด</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>90-100</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>85-89</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>80-84</td>
+                <td>B</td>
+              </tr>
+              <tr>
+                <td>75-79</td>
+                <td>C+</td>
+              </tr>
+              <tr>
+                <td>70-74</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>65-69</td>
+                <td>D+</td>
+              </tr>
+              <tr>
+                <td>60-64</td>
+                <td>D</td>
+              </tr>
+              <tr>
+                <td><64</td>
+                <td>F</td>
+              </tr>
+                
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
