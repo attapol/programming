@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kanit|Prompt&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>เรียนเขียนโปรแกรมจากศูนย์ - อักษรฯ จุฬาฯ</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet" >
-  </head>
-  <body >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>เรียนเขียนโปรแกรมจากศูนย์ - อักษรฯ จุฬาฯ</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
 
   <!-- Page Content -->
   <div class="jumbotron" style='padding: 120px'>
-      <div class="row justify-content-md-center" style='background-color:transparent'>
-        <div class= "col-md-center">
-              <h1>การเขียนโปรแกรมเพื่อการประมวลผลภาษาธรรมชาติ</h1>
-        <h4 >2209671 & 2209261 Programming for Natural Language Processing (Semester 1 2019)</h4>
+    <div class="row justify-content-md-center" style='background-color:transparent'>
+      <div class="col-md-center">
+        <h1>การเขียนโปรแกรมเพื่อการประมวลผลภาษาธรรมชาติ</h1>
+        <h4>2209671 & 2209261 Programming for Natural Language Processing (Semester 1 2019)</h4>
         <ul class="list-unstyled" style='font-size: 20px'>
           <li>ภาควิชาภาษาศาสตร์ คณะอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</li>
           <li>Linguistics Department - Faculty of Arts Chulalongkorn University</li>
         </ul>
-        </div>
+      </div>
     </div>
   </div>
 
-    <div class="container" >
-      <!-- Title -->
-      <!-- Course information -->
-      <div class="row">
-        <div class="col-md-6">
-          <h2>เรียนแล้วจะทำอะไรได้บ้าง</h2><br>
-          <p>จุดมุ่งหมายโดยรวมคือเรียนเขียนคำสั่งให้คอมพิวเตอร์ทำโน่นทำนี่ให้กับเรา โดยจะเรียนไปถึงระดับที่ทำให้สามารถเขียนโปรแกรมด้วยภาษา Python ที่ช่วยทำประมวลข้อมูลทางภาษาในรูปแบบต่างๆ ที่สำคัญๆ เรียนเสร็จควรจะทำพวกนี้ได้</p>
-          <ul>
-            <li>นับจำนวนคำและความถี่ของคำ </li>
-            <li>หา concordance และ collocation ของคำในคลังข้อมูล </li>
-            <li>แปลงรูปแบบของข้อมูลจาก text เป็น json ให้เหมาะสมกับการใช้</li>
-            <li>เขียนโปรแกรมดาวน์โหลดหรือขูดข้อมูลจากแหล่งต่างๆ เช่น บัญชี facebook ของตัวเอง wikipedia ทวิตเตอร์ หรือเว็บไซต์แหล่งข่าว และแปลงเป็นรูปแบบที่ง่ายต่อการวิเคราะห์ทางภาษาศาสตร์</li>
-            <li>ใช้ชุดเครื่องมือ (toolkit) ในการวิเคราะห์คำและประโยคโดยอัตโนมัติ</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h2 class="mb-4">ผู้สอน<br>(ภาคต้น ปีการศึกษา 2562)</h2>
-          <p>Attapol Thamrongrattanarit x Chaya Hiruncharoenvate</p>
-          <p>อาจารย์ ดร.อรรถพล ธำรงรัตนฤทธิ์ x อาจารย์ ดร.ชญา หิรัญเจริญเวช</p>
-          <p>attapol.t@chula.ac.th x chaya.hirun@gmail.com</p>
-        </div>
+  <div class="container">
+    <!-- Title -->
+    <!-- Course information -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>เรียนแล้วจะทำอะไรได้บ้าง</h2><br>
+        <p>จุดมุ่งหมายโดยรวมคือเรียนเขียนคำสั่งให้คอมพิวเตอร์ทำโน่นทำนี่ให้กับเรา
+          โดยจะเรียนไปถึงระดับที่ทำให้สามารถเขียนโปรแกรมด้วยภาษา Python ที่ช่วยทำประมวลข้อมูลทางภาษาในรูปแบบต่างๆ
+          ที่สำคัญๆ เรียนเสร็จควรจะทำพวกนี้ได้</p>
+        <ul>
+          <li>นับจำนวนคำและความถี่ของคำ </li>
+          <li>หา concordance และ collocation ของคำในคลังข้อมูล </li>
+          <li>แปลงรูปแบบของข้อมูลจาก text เป็น json ให้เหมาะสมกับการใช้</li>
+          <li>เขียนโปรแกรมดาวน์โหลดหรือขูดข้อมูลจากแหล่งต่างๆ เช่น บัญชี facebook ของตัวเอง wikipedia ทวิตเตอร์
+            หรือเว็บไซต์แหล่งข่าว และแปลงเป็นรูปแบบที่ง่ายต่อการวิเคราะห์ทางภาษาศาสตร์</li>
+          <li>ใช้ชุดเครื่องมือ (toolkit) ในการวิเคราะห์คำและประโยคโดยอัตโนมัติ</li>
+        </ul>
       </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">ผู้สอน<br>(ภาคต้น ปีการศึกษา 2562)</h2>
+        <p>Attapol Thamrongrattanarit x Chaya Hiruncharoenvate</p>
+        <p>อาจารย์ ดร.อรรถพล ธำรงรัตนฤทธิ์ x อาจารย์ ดร.ชญา หิรัญเจริญเวช</p>
+        <p>attapol.t@chula.ac.th x chaya.hirun@gmail.com</p>
+      </div>
+    </div>
     <br>
-      <!-- Course materials -->
+    <!-- Course materials -->
     <div class="row">
       <div class="col-md-12">
-    <h2>Course Material</h2>
-          <p>Video lectures in Thai: <a href="https://www.youtube.com/channel/UCgNWcPsv0yC94HHVXLjyJ5Q?view_as=subscriber">ภาษาศาสตร์คอมพิวเตอร์ Youtube channel</a> ของอาจารย์อรรถพล | <a href="https://www.youtube.com/playlist?list=PLyyEwPZh6aHonswACFytZDCeDxUNvreX-">playlist</a> ของวิชานี้</p>
-          <p>Textbook: Python ๑๐๑ โดยกิตติภณ พละการ, กิตติภพ พละการ, สมชาย ประสิทธิ์จูตระกูล และ สุกรี สินธุภิญโญ ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย | <a href="https://www.cp.eng.chula.ac.th/books/python101/">ดาวน์โหลดฟรี</a> </p>
-          <p>Slides: จากการบรรยายทั้งหมดเก็บอยู่ใน <a href="https://drive.google.com/drive/folders/1jVNxX07bIRyJtAZRIBCV2fTV36iOy7BQ?usp=sharing">Google Drive</a> (ยืมมาจาก cs106ap.stanford.edu)</p>
-    </div>
+        <h2>Course Material</h2>
+        <p>Video lectures in Thai: <a
+            href="https://www.youtube.com/channel/UCgNWcPsv0yC94HHVXLjyJ5Q?view_as=subscriber">ภาษาศาสตร์คอมพิวเตอร์
+            Youtube channel</a> ของอาจารย์อรรถพล | <a
+            href="https://www.youtube.com/playlist?list=PLyyEwPZh6aHonswACFytZDCeDxUNvreX-">playlist</a> ของวิชานี้</p>
+        <p>Textbook: Python ๑๐๑ โดยกิตติภณ พละการ, กิตติภพ พละการ, สมชาย ประสิทธิ์จูตระกูล และ สุกรี สินธุภิญโญ
+          ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย | <a
+            href="https://www.cp.eng.chula.ac.th/books/python101/">ดาวน์โหลดฟรี</a> </p>
+        <p>Slides: จากการบรรยายทั้งหมดเก็บอยู่ใน <a
+            href="https://drive.google.com/drive/folders/1jVNxX07bIRyJtAZRIBCV2fTV36iOy7BQ?usp=sharing">Google Drive</a>
+          (ยืมมาจาก cs106ap.stanford.edu)</p>
+      </div>
     </div>
     <br>
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>Course Schedule</h2>
-          <p>PA = Programming assignment</p>
-          <p>The schedule will be adjusted based on students' needs.</p>
-          <p><a href="https://colab.research.google.com/drive/1FU-A7-7R_erbGlYUL15G8nCg737WsJRF">เฉลย Lab exercise</a></p>
-          <p><a href="https://colab.research.google.com/drive/1FU-A7-7R_erbGlYUL15G8nCg737WsJRF">เฉลย Lab exercise (extra)</a></p>
-          <p><a href="https://ponraw.ee/prognlp-quiz/">แบบฝึกหัด ไม่มีผลต่อคะแนน</a></p>
-      <div class='table-responsive'>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Course Schedule</h2>
+        <p>PA = Programming assignment</p>
+        <p>The schedule will be adjusted based on students' needs.</p>
+        <p><a href="https://colab.research.google.com/drive/1FU-A7-7R_erbGlYUL15G8nCg737WsJRF">เฉลย Lab exercise</a></p>
+        <p><a href="https://colab.research.google.com/drive/1FU-A7-7R_erbGlYUL15G8nCg737WsJRF">เฉลย Lab exercise
+            (extra)</a></p>
+        <p><a href="https://ponraw.ee/prognlp-quiz/">แบบฝึกหัด ไม่มีผลต่อคะแนน</a></p>
+        <div class='table-responsive'>
           <table class="table table-hover">
             <thead>
               <tr>
@@ -82,28 +95,37 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td><h6><b>Intro to Computational Thinking</b></h6>
+                <td>
+                  <h6><b>Intro to Computational Thinking</b></h6>
                   <ul>
                     <li><code>while</code>, <code>if</code> statement </li>
                     <li>Decomposition</li>
                   </ul>
                 </td>
                 <td>
-                  <p>Before class: Install Anaconda (<a href='https://docs.google.com/document/d/15UdZINoQhB8zAWBCMKoAofSxQUmDMXoaz-iibF2IkZ4/edit?usp=sharing'>tutorial</a>)</p>
+                  <p>Before class: Install Anaconda (<a
+                      href='https://docs.google.com/document/d/15UdZINoQhB8zAWBCMKoAofSxQUmDMXoaz-iibF2IkZ4/edit?usp=sharing'>tutorial</a>)
+                  </p>
                   <p>Slides:
                     <a href="https://drive.google.com/open?id=1yIxLRh4Ys8FbZXrtYghlnT5ivJMoiCWZ">Intro</a> |
                     <a href="https://drive.google.com/open?id=1DUoCV8M0d-VUf1bWMlEb-fFDNr1KM8Xc">Karel basics</a> |
-                    <a href="https://drive.google.com/open?id=1g88_l0CWgeVipCXmi0xOLVPefZLEeV74">Function, if, while</a> |
+                    <a href="https://drive.google.com/open?id=1g88_l0CWgeVipCXmi0xOLVPefZLEeV74">Function, if, while</a>
+                    |
                     <a href="https://drive.google.com/open?id=1ClWSUFYgY4TMncSd1lOeRMoW1uFV_bX_">not</a>
                   </p>
-                  <p>In-class: <a href='https://docs.google.com/document/d/1mclLFFXXBz6YXPH_mCBObwWSUbLSrLq9a--lYtFCOPg/edit?usp=sharing'>Lab1</a></p>
-                  <p>Homework: <a href='https://docs.google.com/document/d/1rJpUGJO9zgMTyWfkMW77J2IvvrFrlA-xrpnTORaHWO8/edit?usp=sharing'>PA1 Karel</a></p>
+                  <p>In-class: <a
+                      href='https://docs.google.com/document/d/1mclLFFXXBz6YXPH_mCBObwWSUbLSrLq9a--lYtFCOPg/edit?usp=sharing'>Lab1</a>
+                  </p>
+                  <p>Homework: <a
+                      href='https://docs.google.com/document/d/1rJpUGJO9zgMTyWfkMW77J2IvvrFrlA-xrpnTORaHWO8/edit?usp=sharing'>PA1
+                      Karel</a></p>
                 </td>
               </tr>
 
               <tr>
                 <td>2</td>
-                <td><h6><b>variables, modules, functions</b></h6>
+                <td>
+                  <h6><b>variables, modules, functions</b></h6>
                   <ul>
                     <li><a href="https://youtu.be/9FuaVv-Pyt4">เขียนโปรแกรมภาษาไพธอนบน console</a></li>
                     <li><a href="https://youtu.be/GQsaZi6P76I">Variables ตัวแปร</a></li>
@@ -116,16 +138,20 @@
                   <p>Slides:
                     <a href="https://drive.google.com/open?id=1KheGMPLMhDJJ0pObBWvwXvMIlIDflCcQ">Intro</a> |
                     <a href="https://drive.google.com/open?id=1dcnf-vPb3s3JfbBHlSQbmF8CxyWAsKzF">Decomposition</a> |
-                    <a href="https://drive.google.com/open?id=1I81Hv0sTW5Rpq3OokFu4e2m5fDjaSHQd">Style, elif, and, or</a> |
+                    <a href="https://drive.google.com/open?id=1I81Hv0sTW5Rpq3OokFu4e2m5fDjaSHQd">Style, elif, and,
+                      or</a> |
                     <a href="https://drive.google.com/open?id=1W-yiOfqRuPdKQzhdrUB07B9HN_DQY1Z1">Variables</a> |
                     <a href="https://drive.google.com/open?id=1jWWHdmQyNhFY68qbZnOn35nqipWiWVrU">Functions</a>
-                  <p>In-class: <a href='https://colab.research.google.com/drive/1f4UQh-U7U3kWh7tDVB1hd9HOV2zrEZP_'>Lab2</a><p>
+                    <p>In-class: <a
+                        href='https://colab.research.google.com/drive/1f4UQh-U7U3kWh7tDVB1hd9HOV2zrEZP_'>Lab2</a>
+                      <p>
                 </td>
               </tr>
 
               <tr>
                 <td>3</td>
-                <td><h6><b>Types, strings, methods, iterations</h6></b>
+                <td>
+                  <h6><b>Types, strings, methods, iterations</h6></b>
                   <ul>
                     <li><a href="https://youtu.be/TtQ8LVdgsTw">Importing modules</a></li>
                     <li><a href="https://youtu.be/byxjKMJ_syk">String</a></li>
@@ -139,16 +165,20 @@
                 <td>
                   <p>Before class: ดูวิดีโอและทำ quiz บน google classroom</p>
                   <p>Slides:
-                    <a href="https://drive.google.com/open?id=17yVW1G_RPvIXoYhLDzINJm41JuyQC2QW">IDE</a> | 
+                    <a href="https://drive.google.com/open?id=17yVW1G_RPvIXoYhLDzINJm41JuyQC2QW">IDE</a> |
                     <a href="https://drive.google.com/open?id=1zMZNZBZ5Fk44k5iOCfmEt28-BtimzoZw">String</a>
                   </p>
-                  <p>In-class: ทบทวนเนื้อหาจากวิดีโอ และทำ <a href="https://colab.research.google.com/drive/1Cbsd5hXv5a7cCa_i8aq5npA3CncZjU9n">Lab3</a></p>
-                  <p>Homework: <a href="https://docs.google.com/document/d/12wCnZIh7cBinRsDnu5iQq18LgeP95X-ClMyZAjFlFN4/edit?usp=sharing">PA2 Simple Python programs part 1</a></p>
+                  <p>In-class: ทบทวนเนื้อหาจากวิดีโอ และทำ <a
+                      href="https://colab.research.google.com/drive/1Cbsd5hXv5a7cCa_i8aq5npA3CncZjU9n">Lab3</a></p>
+                  <p>Homework: <a
+                      href="https://docs.google.com/document/d/12wCnZIh7cBinRsDnu5iQq18LgeP95X-ClMyZAjFlFN4/edit?usp=sharing">PA2
+                      Simple Python programs part 1</a></p>
                 </td>
               </tr>
               <tr>
                 <td>4</td>
-                <td><h6><b>Unicode, memory tracing, ทบทวน</h6></b>
+                <td>
+                  <h6><b>Unicode, memory tracing, ทบทวน</h6></b>
                   <ul>
                     <li><a href="https://youtu.be/tu37ChG-E48">Computer memory organization</a></li>
                     <li><a href="https://youtu.be/ZN0noiAgOas">Function tracing and stack frames</a></li>
@@ -160,20 +190,26 @@
                 </td>
                 <td>
                   <p>Before class: ดูวิดีโอ </p>
-          <p>Slides:
-                    <a href="https://drive.google.com/file/d/1U0LZcnNV_yYnlpr0QWqndYavu1EdO8k-/view?usp=sharing">Unicode</a> | 
+                  <p>Slides:
+                    <a
+                      href="https://drive.google.com/file/d/1U0LZcnNV_yYnlpr0QWqndYavu1EdO8k-/view?usp=sharing">Unicode</a>
+                    |
                     <a href="https://drive.google.com/open?id=1bQa6diXwpjQCoypku0J6IB3yi53oNFDV">Memory Tracing</a> |
-          <a href="https://drive.google.com/open?id=1omUa_D9Eb_nocrVFtO4PVnUEUNDSzpoz">Review</a>
-          
+                    <a href="https://drive.google.com/open?id=1omUa_D9Eb_nocrVFtO4PVnUEUNDSzpoz">Review</a>
+
                   </p>
-                  <p>In-class: <a href="https://colab.research.google.com/drive/1htEszeXrxLmLUCSCo7Hta5cf0OrxwHyJ">Lab4</a></p>
-                  <p>Homework: <a href="https://drive.google.com/open?id=1cZfe36ksgzec0kizq-U0SnUFn5pSdhdSGINr4b8fxmk">PA3 Simple Python programs part 2</a></p>
+                  <p>In-class: <a
+                      href="https://colab.research.google.com/drive/1htEszeXrxLmLUCSCo7Hta5cf0OrxwHyJ">Lab4</a></p>
+                  <p>Homework: <a
+                      href="https://drive.google.com/open?id=1cZfe36ksgzec0kizq-U0SnUFn5pSdhdSGINr4b8fxmk">PA3 Simple
+                      Python programs part 2</a></p>
                 </td>
               </tr>
 
               <tr>
                 <td>5</td>
-                <td><h6><b>List and iterations</h6></b>
+                <td>
+                  <h6><b>List and iterations</h6></b>
                   <ul>
                     <li><a href="https://youtu.be/okwtmuwOcso">Data structure: List</a></li>
                     <li><a href="https://youtu.be/498T92HrHPc">List methods</a></li>
@@ -186,17 +222,21 @@
                 </td>
                 <td>
                   <p>Before class: ดูวิดีโอ</p>
-          <p>Slide:
-                    <a href="https://drive.google.com/open?id=1NX_41gG5ZCD1gSIxUmHGBt6e-6P7Ihto">Data structure: List</a> | 
-                    <a href="https://drive.google.com/open?id=1r0MYw-OBP6V25rT3yi9B9pA-7Mj2TnV0">List programming patterns</a>
+                  <p>Slide:
+                    <a href="https://drive.google.com/open?id=1NX_41gG5ZCD1gSIxUmHGBt6e-6P7Ihto">Data structure:
+                      List</a> |
+                    <a href="https://drive.google.com/open?id=1r0MYw-OBP6V25rT3yi9B9pA-7Mj2TnV0">List programming
+                      patterns</a>
                   </p>
-                  <p>In-class: Exam 1 (เนื้อหา week 1-3), <a href="https://colab.research.google.com/drive/1K5H6COHptPchEywqn9F68IQpF5PUSoTL">Lab5</a></p>
+                  <p>In-class: Exam 1 (เนื้อหา week 1-3), <a
+                      href="https://colab.research.google.com/drive/1K5H6COHptPchEywqn9F68IQpF5PUSoTL">Lab5</a></p>
                 </td>
               </tr>
 
               <tr>
                 <td>6</td>
-                <td><h6><b>Tuple; Nested list: List of lists, list of tuples</h6></b>
+                <td>
+                  <h6><b>Tuple; Nested list: List of lists, list of tuples</h6></b>
                   <ul>
                     <li><a href="https://youtu.be/CxRoXBWgE2s">Data structure: Tuple</a></li>
                     <li><a href="https://youtu.be/CX5y8ZB_fl0">Sorting a list of tuples</a></li --!>
@@ -207,52 +247,68 @@
                 </td>
                 <td>
                   <p>Before class: ดูวิดีโอและทำ quiz บน google classroom</p>
-                  <p>In-class: เฉลย Exam 1 | <a href="https://colab.research.google.com/drive/1XYx_CRJHdI4pHYJBRID3HiLz3ki7AxUY">Lab6</a></p>
-                  <p>Homework: <a href="https://docs.google.com/document/d/1UspjsRshYPpkgqz5eW3EY3X6MbLhRcupec4HLM0dPbI/edit?usp=sharing">ตัวอย่างโจทย์ Exam 2</a>
+                  <p>In-class: เฉลย Exam 1 | <a
+                      href="https://colab.research.google.com/drive/1XYx_CRJHdI4pHYJBRID3HiLz3ki7AxUY">Lab6</a></p>
+                  <p>Homework: <a
+                      href="https://docs.google.com/document/d/1UspjsRshYPpkgqz5eW3EY3X6MbLhRcupec4HLM0dPbI/edit?usp=sharing">ตัวอย่างโจทย์
+                      Exam 2</a>
                 </td>
               </tr>
 
               <tr>
                 <td>7</td>
-                <td><h6><b>File IO; Dictionaries</h6></b>
-                <ul>
+                <td>
+                  <h6><b>File IO; Dictionaries</h6></b>
+                  <ul>
                     <li><a href="https://youtu.be/hn3cwm0Kvps">Data structure: Dictionary</a></li>
-                    <li><a href="https://youtu.be/7LZgQB53lsw">เรียนรู้จากตัวอย่าง 1: อ่านจากไฟล์ นับคำนิราศเมืองแกลง</a></li>
-                    <li><a href="https://youtu.be/hWccha5z_Dg">เรียนรู้จากตัวอย่าง 2: เขียนลงไฟล์ หา concordance</a></li>
-                    <li><a href="https://youtu.be/UjJRs7AlTLw">เรียนรู้จากตัวอย่าง 3: dictionary ใช้นับการกระจายตัวของคำ</a></li>
+                    <li><a href="https://youtu.be/7LZgQB53lsw">เรียนรู้จากตัวอย่าง 1: อ่านจากไฟล์
+                        นับคำนิราศเมืองแกลง</a></li>
+                    <li><a href="https://youtu.be/hWccha5z_Dg">เรียนรู้จากตัวอย่าง 2: เขียนลงไฟล์ หา concordance</a>
+                    </li>
+                    <li><a href="https://youtu.be/UjJRs7AlTLw">เรียนรู้จากตัวอย่าง 3: dictionary
+                        ใช้นับการกระจายตัวของคำ</a></li>
                     <li><a href="code/week5 code.zip">Code และ data จากตัวอย่าง</a></li>
-                </ul>
+                  </ul>
                 </td>
                 <td>
                   <p>Before class: ดูวิดีโอและทำ quiz บน google classroom </p>
                   <p>
-                    Slides: 
-                      <a href="https://drive.google.com/open?id=18dcoxg9qucRqNvW_UtjWh34vgzZSxuVj">File IO</a> |
-                      <a href="https://drive.google.com/open?id=1OsLd6ITWUxsocYtaT25sIQ6CupVAZF0_">Dictionary</a>
+                    Slides:
+                    <a href="https://drive.google.com/open?id=18dcoxg9qucRqNvW_UtjWh34vgzZSxuVj">File IO</a> |
+                    <a href="https://drive.google.com/open?id=1OsLd6ITWUxsocYtaT25sIQ6CupVAZF0_">Dictionary</a>
                   </p>
-                  <p>In-class: <a href='https://colab.research.google.com/drive/1scDK01DADqtA205GvrcvipIOF2T99rra'>Lab7</a></p>
-                  <p>Homework: <a href='https://docs.google.com/document/d/1VI5pug9D917U1yTSaup5lwmN9_Qe-c51JjOdOVkBi4s/edit'>PA4 Jane</a></p>
+                  <p>In-class: <a
+                      href='https://colab.research.google.com/drive/1scDK01DADqtA205GvrcvipIOF2T99rra'>Lab7</a></p>
+                  <p>Homework: <a
+                      href='https://docs.google.com/document/d/1VI5pug9D917U1yTSaup5lwmN9_Qe-c51JjOdOVkBi4s/edit'>PA4
+                      Jane</a></p>
                 </td>
               </tr>
 
               <tr>
                 <td>8</td>
-                <td><h6><b>Regular expression + UNIX</h6></b>
+                <td>
+                  <h6><b>Regular expression + UNIX</h6></b>
 
                 </td>
                 <td>
                   <p>ไม่มีเรียน พิธีรับปริญญา</p>
-                  <p>Homework: </p><p><a href='https://docs.google.com/document/d/1Pnnm9RjGzO_NSyewHZYAM7J9Q5yiFxOIB7Z-wVet_O8/edit#heading=h.82n577u549aa'>
-          Regular expression and UNIX exercises (Lab 8 - 9)
-          </a></p>
-				<p><a href='https://colab.research.google.com/drive/1wzWxuT-EcmAUSdpKJPaINkThGamdw7uo#scrollTo=jvZkMG70OZNS'>Python RegEx Exercise</a></p>
+                  <p>Homework: </p>
+                  <p><a
+                      href='https://docs.google.com/document/d/1Pnnm9RjGzO_NSyewHZYAM7J9Q5yiFxOIB7Z-wVet_O8/edit#heading=h.82n577u549aa'>
+                      Regular expression and UNIX exercises (Lab 8 - 9)
+                    </a></p>
+                  <p><a
+                      href='https://colab.research.google.com/drive/1wzWxuT-EcmAUSdpKJPaINkThGamdw7uo#scrollTo=jvZkMG70OZNS'>Python
+                      RegEx Exercise</a></p>
                 </td>
 
               </tr>
 
               <tr>
                 <td>9</td>
-                <td><h6><b>Midterm week</h6></b>
+                <td>
+                  <h6><b>Midterm week</h6></b>
 
                 </td>
                 <td>
@@ -261,41 +317,55 @@
                   <p>วัน: October 10th, 2019</p>
                   <p>เวลา: 10:00 - 11:00</p>
                   <p>
-                    Homework: <a href='https://docs.google.com/document/d/1qYOOQC_af3-rr_Jb1sH_3-AFVvsAKuOVFhOZ4jsjY8g'>PA5 Chatbot</a> | 
-                    <a href='https://nozomiyamada.github.io/eliza'>Demo Website</a></p> 
+                    Homework: <a
+                      href='https://docs.google.com/document/d/1qYOOQC_af3-rr_Jb1sH_3-AFVvsAKuOVFhOZ4jsjY8g'>PA5
+                      Chatbot</a> |
+                    <a href='https://nozomiyamada.github.io/eliza'>Demo Website</a></p>
 
                 </td>
               </tr>
 
               <tr>
                 <td>10</td>
-                <td><h6><b>Set, Regex in Python, Console program</h6></b>
+                <td>
+                  <h6><b>Set, Regex in Python, Console program</h6></b>
                 </td>
                 <td>
-					<p>Slides:
+                  <p>Slides:
                     <a href="https://drive.google.com/open?id=1oRoDQ9pgYVwQ9lTy-cmmHDEUJiR9XIbV">Command Line</a> |
                     <a href="https://drive.google.com/open?id=1mAzY2rWLBK_kBh8JEqHmlSHQCYpmCz9b">RegEx</a> |
                     <a href="https://drive.google.com/open?id=1jMgxK8vP8IQkttQvI6l3uy11YNsN5-T0">Set</a>
                   </p>
-                  <p>In-class: <a href="https://colab.research.google.com/drive/1X03URsn-82VKCA-l9Lyk3QLHLzr8bc5y">Lab 10</a></p>
-				  <p><p>
+                  <p>In-class: <a href="https://colab.research.google.com/drive/1X03URsn-82VKCA-l9Lyk3QLHLzr8bc5y">Lab
+                      10</a></p>
+                  <p>
+                    <p>
                 </td>
               </tr>
 
               <tr>
                 <td>11</td>
-                <td><h6><b>Nested data structures: dictionaries of tuples, lists, dictionaries</h6></b>
-
+                <td>
+                  <h6><b>Nested data structures: dictionaries of tuples, lists, dictionaries</h6></b>
+                  <ul>
+                    <li><a href="https://youtu.be/hhuzLVt9-Lk">Nested list</a></li>
+                    <li><a href="https://youtu.be/M3BUoBVOEFc">Nested loop</a></li>
+                    <li><a href="https://youtu.be/vW5zcQSVGhs">Parallel list</a></li>
+                    <li><a href="https://youtu.be/WZXQJXE2W60">Nested dictionaries</a></li>
+                  </ul>
                 </td>
                 <td>
-                  <p>Before class: </p>
-                  <p>In-class: </p>
+                  <p>Before class: ดูวิดีโอและทำ quiz บน google classroom</p>
+                  <p>Homework: <a
+                      href="https://docs.google.com/document/d/1sEJx-Xwui6KINaLix67uEBGkHz9jaB91emSK7MSsh_o/">ตัวอย่างโจทย์
+                      Exam3</a></p>
                 </td>
               </tr>
 
               <tr>
                 <td>12</td>
-                <td><h6><b>Web technology, Serialization, and API</h6></b>
+                <td>
+                  <h6><b>Web technology, Serialization, and API</h6></b>
 
                 </td>
                 <td>
@@ -306,18 +376,20 @@
 
               <tr>
                 <td>13</td>
-                <td><h6><b>Lambdas, list comprehension, and sorting</h6></b>
+                <td>
+                  <h6><b>NLP with Spacy and PythaiNLP</h6></b>
 
                 </td>
                 <td>
                   <p>Before class: </p>
-                  <p>In-class: </p>
+                  <p>In-class: Exam3 (เนื้อหา week 7-11)</p>
                 </td>
               </tr>
 
               <tr>
                 <td>14</td>
-                <td><h6><b>Object-oriented Programming</h6></b>
+                <td>
+                  <h6><b>Object-oriented Programming</h6></b>
 
                 </td>
                 <td>
@@ -328,18 +400,21 @@
 
               <tr>
                 <td>15</td>
-                <td><h6><b>NLP with Spacy and PythaiNLP</h6></b>
+                <td>
+                  <h6><b>Lambdas, list comprehension, and sorting</h6></b>
 
                 </td>
                 <td>
                   <p>Before class: </p>
                   <p>In-class: </p>
+
                 </td>
               </tr>
 
               <tr>
                 <td>16</td>
-                <td><h6><b>Pandas</h6></b>
+                <td>
+                  <h6><b>Pandas</h6></b>
 
                 </td>
                 <td>
@@ -350,18 +425,18 @@
 
             </tbody>
           </table>
-      </div>
         </div>
       </div>
-      <!-- Course information -->
+    </div>
+    <!-- Course information -->
     <br>
-        </div>
-      </div>
+  </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+</body>
 
 </html>
