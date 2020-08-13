@@ -73,10 +73,7 @@
             href="https://www.youtube.com/watch?v=f3-K5UqWUQI&list=PLyyEwPZh6aHrcRn3Aa18bqlyqjAxuVYji" target="blank_">playlist</a> ของวิชานี้</p>
         <p>Textbook: Python ๑๐๑ โดยกิตติภณ พละการ, กิตติภพ พละการ, สมชาย ประสิทธิ์จูตระกูล และ สุกรี สินธุภิญโญ
           ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย | <a
-            href="https://www.cp.eng.chula.ac.th/books/python101/" target="blank_">ดาวน์โหลดฟรี</a> </p>
-        <p>Slides: จากการบรรยายทั้งหมดเก็บอยู่ใน <a
-            href="#">Google Drive</a>
-          (ยืมมาจาก cs106ap.stanford.edu)</p>
+            href="https://www.cp.eng.chula.ac.th/books/python101/" target="blank_">ดาวน์โหลดฟรี</a></p>
       </div>
     </div>
     <br>
@@ -446,6 +443,16 @@
       var media = "tablet";
     }else{
       var media = "PC";
+    }
+
+    // for mobile, recreate HTML (video modal -> normal link <a>)
+    if(media=="mobile"){
+      let video_elements = document.getElementsByClassName('video');
+      for(let elem of video_elements){
+        var title = elem.innerText;
+        var url = elem.innerHTML.match(/show_video\(\'(.+?)\'\)/)[1];
+        elem.innerHTML = `<a href="https://youtu.be/${url}" target="blank">${title}</a>`;
+      }
     }
 
     // Show/Delete Video Modal
