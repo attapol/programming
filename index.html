@@ -14,7 +14,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet">
   <style>
-    .video{text-decoration: underline; color:darkcyan}
+    .video{text-decoration: underline; color:#007bff}
     .video:hover{cursor: pointer;}
   </style>
 </head>
@@ -105,45 +105,37 @@
                 <td>
                   <h6><b>Intro: Karel</b></h6>
                   <ol>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true"
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/f3-K5UqWUQI?autoplay=1" frameborder="0" allowfullscreen></iframe>'>
-                      Computational Thinking</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('f3-K5UqWUQI');">Computational Thinking</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/jZj6_yVb5Ys" frameborder="0" allowfullscreen></iframe>'>
-                      Function</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('jZj6_yVb5Ys');">Function</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/oiW1zz0pIlU" frameborder="0" allowfullscreen></iframe>'>
-                      Decomposition</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('oiW1zz0pIlU');">Decomposition</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/vVdd4sm3dPY" frameborder="0" allowfullscreen></iframe>'>
-                      For Loop</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('vVdd4sm3dPY');">For Loop</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/JY0Rh1C4at0" frameborder="0" allowfullscreen></iframe>'>
-                      While Loop</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('JY0Rh1C4at0');">While Loop</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/26O4PGmf51c" frameborder="0" allowfullscreen></iframe>'>
-                      If, Else</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('26O4PGmf51c');">If, Else</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/WSTLHQJUtdo" frameborder="0" allowfullscreen></iframe>'>
-                      Boolean Logic</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('WSTLHQJUtdo');">Boolean Logic</span>
                     </li>
-                    <li>
-                      <span class="video" data-toggle="popover" data-placement="right" data-html="true" 
-                      data-content='<iframe width="560" height="315" src="https://www.youtube.com/embed/MV65VN2r7NA" frameborder="0" allowfullscreen></iframe>'>
-                      Wrap up</span>
+                    <li class="video">
+                      <span data-toggle="modal" data-target="#video_modal"
+                      onclick="show_video('MV65VN2r7NA');">Wrap Up</span>
                     </li>
                   </ol>
                 </td>
@@ -445,6 +437,39 @@
   <script>
     $('.container [data-toggle="tooltip"]').tooltip();
     $('.container [data-toggle="popover"]').popover();
+
+    // check media type
+    var ua = navigator.userAgent;
+    if(ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0){
+      var media = "mobile";
+    }else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+      var media = "tablet";
+    }else{
+      var media = "PC";
+    }
+
+    // Show/Delete Video Modal
+    function show_video(youtubeID){
+      var title = event.target.innerText;
+      var insert_html = `
+      <div class="modal fade" id="video_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">${title}</h5>
+                <button type="button" class="close" data-dismiss="modal" onclick="document.getElementById('video_modal').remove();">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/${youtubeID}" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>`;
+      event.target.insertAdjacentHTML('afterend', insert_html);
+    }
+
   </script>
 
 </body>
