@@ -25,11 +25,11 @@
   <div class="jumbotron" style='padding: 120px'>
     <div class="row justify-content-md-center" style='background-color:transparent'>
       <div class="col-md-center">
-        <h1>การเขียนโปรแกรมเพื่อการประมวลผลภาษาธรรมชาติ</h1>
-        <h4>2209671 & 2209261 Programming for Natural Language Processing (Semester 1 2020)</h4>
+        <h1>Programming for Natural Language Processing</h1>
         <ul class="list-unstyled" style='font-size: 20px'>
-          <li>ภาควิชาภาษาศาสตร์ คณะอักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</li>
+          <li><a href="http://attapol.github.io">Attapol Thamrongrattanarit</a></li>
           <li>Linguistics Department - Faculty of Arts Chulalongkorn University</li>
+          <li>attapol.t@chula.ac.th</li>
         </ul>
       </div>
     </div>
@@ -37,643 +37,298 @@
 
   <div class="container">
 
-    <!-- Title -->
-    <!-- Course information -->
-    <div class="row">
-      <div class="col-md-6">
-        <h2>เรียนแล้วจะทำอะไรได้บ้าง</h2><br>
-        <p>จุดมุ่งหมายโดยรวมคือเรียนเขียนคำสั่งให้คอมพิวเตอร์ทำโน่นทำนี่ให้กับเรา
-          โดยจะเรียนไปถึงระดับที่ทำให้สามารถเขียนโปรแกรมด้วยภาษา Python ที่ช่วยทำประมวลข้อมูลทางภาษาในรูปแบบต่างๆ
-          ที่สำคัญๆ เรียนเสร็จควรจะทำพวกนี้ได้</p>
-        <ul>
-          <li>นับจำนวนคำและความถี่ของคำ </li>
-          <li>หา concordance และ collocation ของคำในคลังข้อมูล </li>
-          <li>แปลงรูปแบบของข้อมูลจาก text เป็น json ให้เหมาะสมกับการใช้</li>
-          <li>เขียนโปรแกรมดาวน์โหลดหรือขูดข้อมูลจากแหล่งต่างๆ เช่น บัญชี facebook ของตัวเอง wikipedia ทวิตเตอร์
-            หรือเว็บไซต์แหล่งข่าว และแปลงเป็นรูปแบบที่ง่ายต่อการวิเคราะห์ทางภาษาศาสตร์</li>
-          <li>ใช้ชุดเครื่องมือ (toolkit) ในการวิเคราะห์คำและประโยคโดยอัตโนมัติ</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h2 class="mb-4">ผู้สอน<br>(ภาคต้น ปีการศึกษา 2563)</h2>
-        <p>Attapol Thamrongrattanarit x Chaya Hiruncharoenvate</p>
-        <p>ผศ. ดร.อรรถพล ธำรงรัตนฤทธิ์ x อาจารย์ ดร.ชญา หิรัญเจริญเวช</p>
-        <p>attapol.t@chula.ac.th x chaya.hirun@gmail.com</p>
-      </div>
-    </div>
-    <br>
 
     <!-- Course materials -->
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-lg-12">
         <h2>Course Material</h2>
         <p>Video lectures in Thai: <a
             href="https://www.youtube.com/channel/UCgNWcPsv0yC94HHVXLjyJ5Q?view_as=subscriber" target="blank_">ภาษาศาสตร์คอมพิวเตอร์
-            Youtube channel</a> ของอาจารย์อรรถพล | <a
-            href="https://www.youtube.com/watch?v=f3-K5UqWUQI&list=PLyyEwPZh6aHrcRn3Aa18bqlyqjAxuVYji" target="blank_">playlist</a> ของวิชานี้
-        </p>
+            Youtube channel</a> ของอาจารย์อรรถพล 
         <p>Textbook: Python ๑๐๑ โดยกิตติภณ พละการ, กิตติภพ พละการ, สมชาย ประสิทธิ์จูตระกูล และ สุกรี สินธุภิญโญ
           ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย | <a
             href="https://www.cp.eng.chula.ac.th/books/python101/" target="blank_">ดาวน์โหลดฟรี</a>
         </p>
       </div>
     </div>
-    <br>
     
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 1: Computational Thinking</h2>
-        <br/>
-          <ol>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('f3-K5UqWUQI');">Computational Thinking</span>
-            </li>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('jZj6_yVb5Ys');">Function</span>
-            </li>
+    <div class="row mt-4 module">
+      <div class="col-md-5">
+        <h2>Module 1 </h2>
+        <h3>🤔 Computational Thinking</h3>
+      </div>
+      <div class="col-md-7">
+        <h3>Control Structure: for, while, if</h3>
+        <ul>
+          <a href="https://youtu.be/f3-K5UqWUQI" target="_blank">
+          <li class="video">Computational Thinking
+          </li></a>
+          <a href="https://youtu.be/jZj6_yVb5Ys" target="_blank"><li class="video">
+            Function
+          </li></a>
 
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('oiW1zz0pIlU');">Decomposition</span>
-            </li>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('vVdd4sm3dPY');">For Loop</span>
-            </li>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('JY0Rh1C4at0');">While Loop</span>
-            </li>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('26O4PGmf51c');">If, Else</span>
-            </li>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('WSTLHQJUtdo');">Boolean Logic</span>
-            </li>
-            <li class="video">
-              <span data-toggle="modal" data-target="#video_modal"
-              onclick="show_video('MV65VN2r7NA');">Wrap Up</span>
-            </li>
-          </ol>
+          <a href="https://youtu.be/oiW1zz0pIlU" target="_blank"><li class="video">
+            Decomposition
+          </li></a>
+          <a href="https://youtu.be/vVdd4sm3dPY" target="_blank"><li class="video">
+            For Loop
+          </li></a>
+          <a href="https://youtu.be/JY0Rh1C4at0" target="_blank"><li class="video">
+            While Loop
+          </li></a>
+          <a href="https://youtu.be/26O4PGmf51c" target="_blank"><li class="video">
+            If, Else
+          </li></a>
+          <a href="https://youtu.be/WSTLHQJUtdo" target="_blank"><li class="video">
+            Boolean Logic
+          </li></a>
+          <a href="https://youtu.be/MV65VN2r7NA" target="_blank"><li class="video">
+            Wrap Up
+          </li></a>
+        </ul>
       </div>
     </div>
-    <br>
 
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 2: Programming Basics</h2>
-        <br/>
-        <div class='table-responsive'>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Week </th>
-                <th>Lecture</th>
-                <th>Demo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>
-                  <ol>  
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('ts4aamEQ40k');">Variables ตัวแปร</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('lQnmDWItV1Y');">Variable Type ชนิดของตัวแปร</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('31yCMKALwms');">Function and argument</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('Er-DPKQCWOM');">Module</span>
-                    </li>
-                  </ol>
-
-                </td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('9FuaVv-Pyt4');">เขียนโปรแกรมภาษาไพธอนบน console</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('GQsaZi6P76I');">วิธีการใช้ Variable</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('o_9mFOL_mpQ');">วิธีการใช้ Functions และ built-in functions</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('MOJ4NHAQjd8');">วิธีการเขียน function</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('TtQ8LVdgsTw');">การใช้ module</span>
-                    </li>
-                  </ol>
-                </td>
-              </tr>
-
-              <tr>
-                <td>2</td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('tu37ChG-E48');">Computer memory organization</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('ZN0noiAgOas');">Function tracing and stack frames</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('vh_iZ1IfLS8');"><code>print</code> vs <code>return</code></span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('sq-xMspaxCs');">String</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('iieO3shM8lQ');">String manipulation</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('TM_YD3quk-c');">String iteration</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('LXlznFg8Es4');">Unicode string in Python</span>
-                    </li>
-
-                    
-                  </ol>
-
-                </td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('byxjKMJ_syk');">วิธีการใช้ String</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('KLcwx1N6ZW4');">วิธีการใช้ String operands</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('ZvZbX_Awq3c');">Interact กับผู้ใช้ด้วย print และ input</span>
-                    </li>
-
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('dFaGO8T_mzA');">Docstring</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('atA78y0jUdw');">วิธีการทำ String splicing</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('_n3yrbbeu5E');">การใช้ Methods and string manipulation</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('R_V3qPfm5pY');">ตัวอย่าง 1 ทบทวนและใช้เครื่องมือที่เรียนมา</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('xKLBaNEv_WA');">ตัวอย่าง 2 ทบทวนและใช้เครื่องมือที่เรียนมา</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('Z-mElNsk6to');">ตัวอย่าง 3 ใช้ for loop เพื่อ iterate string</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('MPnnHWi6FZA');">ตัวอย่าง 4 ใช้ for loop เพื่อ iterate string</span>
-                    </li>
-                  </ol>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <div class="row mt-4 module">
+      <div class="col-md-5">
+        <h2>Module 2</h2>
+        <h3>🏗 Programming Basics</h3>
+      </div>
+      <div class="col-md-7">
+        <h3>Variable and function</h3>
+        <ul>  
+          <a href="https://youtu.be/ts4aamEQ40k" target="_blank"><li class="video">
+            Variables ตัวแปร
+          </li></a>
+          <a href="https://youtu.be/lQnmDWItV1Y" target="_blank"><li class="video">
+            Variable Type ชนิดของตัวแปร
+          </li></a>
+          <a href="https://youtu.be/31yCMKALwms" target="_blank"><li class="video">
+            Function and argument
+          </li></a>
+          <a href="https://youtu.be/Er-DPKQCWOM" target="_blank"><li class="video">
+            Module
+          </li></a>
+          <li class="video">
+            Docstring
+          </li>
+          <a href="https://youtu.be/tu37ChG-E48" target="_blank"><li class="video">
+            Computer memory organization
+          </li></a>
+          <a href="https://youtu.be/vh_iZ1IfLS8" target="_blank"><li class="video">
+            <code>print</code> vs <code>return</code>
+          </li></a>
+        </ul>
+        <h3>String</h3>
+        <ul>
+          <a href="https://youtu.be/sq-xMspaxCs" target="_blank"><li class="video">
+            String
+          </li></a>
+          <a href="https://youtu.be/iieO3shM8lQ" target="_blank"><li class="video">
+            String manipulation
+          </li></a>
+          <a href="https://youtu.be/TM_YD3quk-c" target="_blank"><li class="video">
+            String iteration
+          </li></a>
+          <a href="https://youtu.be/LXlznFg8Es4" target="_blank"><li class="video">
+            Unicode string in Python
+          </li></a>
+        </ul>
       </div>
     </div>
-    <br />
 
-
-
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 3: Data Structure I</h2>
-        <br/>
-        <div class='table-responsive'>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Topic </th>
-                <th>Lecture</th>
-                <th>Demo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  List
-                </td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('2pReJIQI9Ao');">Data Structure และ List</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('UbodqYUaMA8');">List iteration</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('EaSnNbcl8kM');">List operation</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('qAFYKtixFAQ');">Range</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('lxRHYMD4QxE');">Patterns ที่ใช้บ่อยๆกับ List</span>
-                    </li>
-
-                  </ol>
-
-                </td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('okwtmuwOcso');">วิธีการสร้าง List</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('498T92HrHPc');">สาธิตการใช้ List methods</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('BdicdSC-0MQ');">วิธีการทำ For loop over indices</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('QtOE_pUL1j8');">วิธีการทำ While loop บน List</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('2T1_0eLYPAQ');">ตัวอย่าง 1 iterate list ของคำ</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('3fO3yQL5D9I');">ตัวอย่าง 2 split string</span>
-                    </li>
-                  </ol>
-                </td>
-              </tr>
-              <tr>
-                <td>Dictionary & Tuple</td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('E7DQaHDmSXs');">Dictionary</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('MBdRDNTIQbY');">Dictionary Iteration</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('FobPcPbWfcc');">Dictionary Methods</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('CxRoXBWgE2s');">Tuple</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('jhgeai82yw0');">Counter</span>
-                    </li>
-                    
-
-                  </ol>
-                </td>
-                <td>
-                  <ol>
-                    <!--li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('hn3cwm0Kvps');">สาธิตวิธีการใช้ Dictionary</span>
-                    </li-->
-                    
-                  </ol>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <div class="row mt-4 module">
+      <div class="col-md-5">
+        <h2>Module 3</h2>
+        <h3>📎 Data Structure I</h3>
+      </div>
+      <div class="col-md-7">
+        <h3>List</h3>
+        <ul> 
+          <a href="https://youtu.be/2pReJIQI9Ao" target="_blank"><li class="video">
+            Data Structure และ List
+          </li></a>
+          <a href="https://youtu.be/UbodqYUaMA8" target="_blank"><li class="video">
+            List iteration
+          </li></a>
+          <a href="https://youtu.be/EaSnNbcl8kM" target="_blank"><li class="video">
+            List operation
+          </li></a>
+          <a href="https://youtu.be/qAFYKtixFAQ" target="_blank"><li class="video">
+            Range
+          </li></a>
+          <a href="https://youtu.be/lxRHYMD4QxE" target="_blank"><li class="video">
+            Patterns ที่ใช้บ่อยๆกับ List
+          </li></a>
+        </ul>
+        <h3>Dictionary & Tuple</h3>
+        <ul>
+          <a href="https://youtu.be/E7DQaHDmSXs" target="_blank"><li class="video">
+            Dictionary
+          </li></a>
+          <a href="https://youtu.be/MBdRDNTIQbY" target="_blank"><li class="video">
+            Dictionary Iteration
+          </li></a>
+          <a href="https://youtu.be/FobPcPbWfcc" target="_blank"><li class="video">
+            Dictionary Methods
+          </li></a>
+          <a href="https://youtu.be/CxRoXBWgE2s" target="_blank"><li class="video">
+            Tuple
+          </li></a>
+          <a href="https://youtu.be/jhgeai82yw0" target="_blank"><li class="video">
+            Counter
+          </li></a>    
+        </ul> 
       </div>
     </div>
-    <br />
 
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 4: File and Text Data Handling</h2>
-        <br/>
-        <div class='table-responsive'>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Topic </th>
-                <th>Lecture</th>
-                <th>Resources</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>File I/O</td>
-                <td>
-                  <ul>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('SpP5Kesdd1E');">การอ่านข้อมูลจากไฟล์</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('YJNvEfEYgqE');">การเขียนข้อมูลลงไฟล์</span>
-                    </li>
-                  </ul>
-                </td>
-                <td>                 
-                  <ul>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('7LZgQB53lsw');">เรียนรู้จากตัวอย่าง 1: อ่านจากไฟล์ นับคำนิราศเมืองแกลง</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('hWccha5z_Dg');">เรียนรู้จากตัวอย่าง 2: เขียนลงไฟล์ หา concordance</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('UjJRs7AlTLw');">เรียนรู้จากตัวอย่าง 3: dictionary ใช้นับการกระจายตัวของคำ</span>
-                    </li>
-                  </ul>
-
-                  <p><a href="code/week5 code.zip">Code และ data จากตัวอย่าง</a></p>
-                </td>
-              </tr>
-              <tr>
-                <td>Regular Expression</td>
-                <td>
-                  <ul>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('k6ruf3aD4Pg');">Regular Expression</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('iwKVi3JTcdc');">การใช้ Regular expression กับภาษา Python</span>
-                    </li>
-                  </ul>
-                </td>
-                <td>
-                  <p><a href="http://www.regexone.com">แบบฝึกหัดการเขียน Regular Expression</a></p>
-                </td>
-              </tr>
-              <tr>
-                <td>UNIX Tools</td>
-                <td>
-                  <ul>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('yxCpJX6GKBQ');">UNIX Operating System</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('mYQIxHo7Dt8');">UNIX Tools Ep1</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('YbcPfNELq-M');">UNIX Tools Ep2</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('I6K-sy9Fyag');">UNIX Tools Ep3</span>
-                    </li>
-                  </ul>                  
-
-                </td>
-                <td>
-
-                </td>
-
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
+    <div class="row mt-4 module">
+      <div class="col-md-5">
+        <h2>Module 4</h2>
+        <h3>📝 File and Text Data</h3>
       </div>
-    </div>
-    <br />
-
-
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 5: Data Structure II</h2>
-        <br/>
-        <div class='table-responsive'>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Topic </th>
-                <th>Lecture</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Set</td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('j0gkuFeH0xU');">Set</span>
-                    </li>
-                  </ol>
-                </td>
-              </tr>
-              <td>Nested Data Structure</td>
-              <td>
-                <ol>
-
-                  <li class="video">
-                    <span data-toggle="modal" data-target="#video_modal"
-                    onclick="show_video('w6KfKsXOjzQ');">Nested data structure</span>
-                  </li>
-                  <li class="video">
-                    <span data-toggle="modal" data-target="#video_modal"
-                    onclick="show_video('lV1mxww5M1A');">List of tuples</span>
-                  </li>
-
-                </ol>
-              </td>
-            </tr>
-
-              <tr>
-                <td>Advanced Lists</td>
-                <td>
-                  <ol>
-
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('hhuzLVt9-Lk');">Nested list</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('M3BUoBVOEFc');">Nested loop</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('vW5zcQSVGhs');">Parallel list</span>
-                    </li>
-
-                  </ol>
-                </td>
-              </tr>
-              <tr>
-                <td>Advanced Dictionary
-
-                </td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('QJ6_fdloaKQ');">Dictionary ที่ key เป็น tuple</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('pm51rONRmXE');">Dictionary ที่ value เป็น list</span>
-                    </li>                  
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('Wy_2Y3MrvZU');">List of info dictionaries</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('_QoJiejsmkE');">Dictionary in dictionary</span>
-                    </li>
-                  </ol>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <br />
-
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 6: Object-Oriented Programming</h2>
-        <br/>
-        <div class='table-responsive'>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th>Topic</th>
-                <th>Lecture</th>
-                <th>Demo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Object-Oriented Programming
-                </td>
-                <td>
-                  <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('hFwiMnqd8iA');">การสร้างและ import module</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('CEkwAJQIjQQ');">Class, Object, Method</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('0SM-dGqPmZ0');">เขียน Class โดยใช้ Python</span>
-                    </li>     
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('ewaXWqA-vxM');">Class vs Object Attribute</span>
-                    </li>                
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('fIhY_jl5SWo');">การ Implement Methods และ Attributes</span>
-                    </li>
+      <div class="col-md-7">
+        <h3>File I/O</h3>
+        <ul>
+          <a href="https://youtu.be/SpP5Kesdd1E" target="_blank"><li class="video">
+            การอ่านข้อมูลจากไฟล์
+          </li></a>
+          <a href="https://youtu.be/YJNvEfEYgqE" target="_blank"><li class="video">
+            การเขียนข้อมูลลงไฟล์
+          </li></a>
+        </ul>
+        <h3>Regular Expression</h3>
+        <ul>
+          <a href="https://youtu.be/k6ruf3aD4Pg" target="_blank"><li class="video">
+            Regular Expression
+          </li></a>
+          <a href="https://youtu.be/iwKVi3JTcdc" target="_blank"><li class="video">
+            การใช้ Regular expression กับภาษา Python
+          </li></a>
+          <a href="http://www.regexone.com"><li class="practice">
+            แบบฝึกหัดการเขียน Regular Expression
+          </li></a>
+        </ul>
                 
-                  </ol>
-                </td>
+        <h3>UNIX Tools (optional)</h3>   
+        <ul>
+          <a href="https://youtu.be/yxCpJX6GKBQ" target="_blank"><li class="video">
+            UNIX Operating System
+          </li></a>
+          <a href="https://youtu.be/mYQIxHo7Dt8" target="_blank"><li class="video">
+            UNIX Tools Ep1
+          </li></a>
+          <a href="https://youtu.be/YbcPfNELq-M" target="_blank"><li class="video">
+            UNIX Tools Ep2
+          </li></a>
+          <a href="https://youtu.be/I6K-sy9Fyag" target="_blank"><li class="video">
+            UNIX Tools Ep3
+          </li></a>
+        </ul>                  
+      </div>
+    </div>
+
+    <div class="row mt-4 module">
+      <div class="col-md-5">
+        <h2>Module 5</h2>
+        <h3>🖇 Data Structure II</h3>
+      </div>
+      <div class="col-md-7">
+        <div class='table-responsive'>
+          <table class="table table-hover">
+         
+            <tbody>
+              <tr>
+                <td><h4>Set</h4></td>
                 <td>
-                    <p class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('Ucz9bNRKHuI');">ตัวอย่างการเขียน class และ method</span>
-                    </p>
-                    <a href="code/tweet.py">tweet.py</a> | <a href="code/corpus.py">corpus.py</a>
+                  <ul>
+                    <a href="https://youtu.be/j0gkuFeH0xU" target="_blank"><li class="video">
+                      Set
+                    </li></a>
+                  </ul>
                 </td>
               </tr>
               <tr>
+                <td><h4>Advanced List</h4></td>
                 <td>
-                  Subclass (optional)
+                  <ul>
+                    <a href="https://youtu.be/w6KfKsXOjzQ" target="_blank"><li class="video">
+                      Nested data structure
+                    </li></a>
+                    <a href="https://youtu.be/lV1mxww5M1A" target="_blank"><li class="video">
+                      List of tuples
+                    </li></a>
+                    <a href="https://youtu.be/hhuzLVt9-Lk" target="_blank"><li class="video">
+                      Nested list
+                    </li></a>
+                    <a href="https://youtu.be/M3BUoBVOEFc" target="_blank"><li class="video">
+                      Nested loop
+                    </li></a>
+                    <a href="https://youtu.be/vW5zcQSVGhs" target="_blank"><li class="video">
+                      Parallel list
+                    </li></a>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td><h4>Advanced Dictionary</h4>
                 </td>
                 <td>
-                  <p class="video">
-                    <span data-toggle="modal" data-target="#video_modal"
-                    onclick="show_video('6Pf1iSaUDu4');">Subclasses and Inheritance</span>
-                  </p>
-                </td>
-                <td>
-                  <p class="video">
-                    <span data-toggle="modal" data-target="#video_modal"
-                    onclick="show_video('jdd5DNXNl0A');">ตัวอย่างการใช้ subclass</span>
-                  </p>
-                  <a href="code/text_container.py">text_container.py</a>
+                  <ul>
+                    <a href="https://youtu.be/QJ6_fdloaKQ" target="_blank"><li class="video">
+                      Dictionary ที่ key เป็น tuple
+                    </li></a>
+                    <a href="https://youtu.be/pm51rONRmXE" target="_blank"><li class="video">
+                      Dictionary ที่ value เป็น list
+                    </li></a>                  
+                    <a href="https://youtu.be/Wy_2Y3MrvZU" target="_blank"><li class="video">
+                      List of info dictionaries
+                    </li></a>
+                    <a href="https://youtu.be/_QoJiejsmkE" target="_blank"><li class="video">
+                      Dictionary in dictionary
+                    </li></a>
+                  </ul>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-
-
-     
- 
       </div>
     </div>
 
-    <div class="row mt-4">
-      <div class="col-lg-12">
-        <h2>Module 7: Natural Language Processing</h2> 
+    <div class="row mt-4 module">
+      <div class="col-md-5">
+        <h2>Module 6</h2>
+        <h3>🏭 Object-Oriented Programming</h3>
+      </div>
+      <div class="col-md-7">
+        <ul>
+          <a href="https://youtu.be/hFwiMnqd8iA" target="_blank"><li class="video">
+            การสร้างและ import module
+          </li></a>
+          <a href="https://youtu.be/CEkwAJQIjQQ" target="_blank"><li class="video">
+            Class, Object, Method
+          </li></a>
+          <a href="https://youtu.be/0SM-dGqPmZ0" target="_blank"><li class="video">
+            เขียน Class โดยใช้ Python
+          </li></a>     
+          <a href="https://youtu.be/ewaXWqA-vxM" target="_blank"><li class="video">
+            Class vs Object Attribute
+          </li></a>                
+          <a href="https://youtu.be/fIhY_jl5SWo" target="_blank"><li class="video">
+            การ Implement Methods และ Attributes
+          </li></a>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="row mt-4 module">
+      <div class="col-md-12">
+        <h2>Module 7</h2>
+        <h3>💬 Natural Language Processing</h3> 
         <br/>
          <p>Under construction...</p>
          <div class='table-responsive'>
@@ -694,9 +349,10 @@
     </div>
     <br />
 
-    <div class="row mt-4">
+    <div class="row mt-4 module">
       <div class="col-lg-12">
-        <h2>Module 8: Web Scraping</h2> 
+        <h2>Module 8</h2>
+        <h3>🕸 Web Scraping</h3> 
         <br/>
 
         <div class='table-responsive'>
@@ -715,14 +371,12 @@
                 </td>
                 <td>
                   <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('2-fdXMyogKw');">Overview</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('6Xdm7g5-Aso');">Serialization in Python</span>
-                    </li>
+                    <a href="https://youtu.be/2-fdXMyogKw" target="_blank"><li class="video">
+                      Overview
+                    </li></a>
+                    <a href="https://youtu.be/6Xdm7g5-Aso" target="_blank"><li class="video">
+                      Serialization in Python
+                    </li></a>
                   </ol>
                 </td>
                 <td>
@@ -734,14 +388,12 @@
                 </td>
                 <td>
                   <ol>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('HN595s7Viww');">Scraping HTML</span>
-                    </li>
-                    <li class="video">
-                      <span data-toggle="modal" data-target="#video_modal"
-                      onclick="show_video('oSm6VxOW-2o');">API Call</span>
-                    </li>
+                    <a href="https://youtu.be/HN595s7Viww" target="_blank"><li class="video">
+                      Scraping HTML
+                    </li></a>
+                    <a href="https://youtu.be/oSm6VxOW-2o" target="_blank"><li class="video">
+                      API Call
+                    </li></a>
                   </ol>
                 </td>
                 <td>
@@ -759,15 +411,15 @@
     </div>
     <br />
 
-    <div class="row mt-4">
+    <div class="row mt-4 module">
       <div class="col-lg-12">
-        <h2>Module 9: Advanced Python Features</h2>  
+        <h2>Module 9</h2>
+        <h3>🐍 Advanced Python Features</h3>  
         <br/>
         <ol>
-          <li class="video">
-            <span data-toggle="modal" data-target="#video_modal"
-            onclick="show_video('9v0fP-XxtnA');">Function mapping (optional)</span>
-          </li>
+          <a href="https://youtu.be/9v0fP-XxtnA" target="_blank"><li class="video">
+            Function mapping (optional)
+          </li></a>
           <li>
             List comprehension
           </li>
